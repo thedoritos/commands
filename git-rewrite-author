@@ -24,4 +24,4 @@ then
 fi
 '
 
-git filter-branch --env-filter "${ENV_FILTER}" --tag-name-filter cat -- --branches --tags
+git filter-branch -f --env-filter "${ENV_FILTER}" --tag-name-filter cat -- --branches --tags
