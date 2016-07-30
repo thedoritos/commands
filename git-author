@@ -3,7 +3,7 @@
 AUTHOR_NAME=$1
 AUTHOR_EMAIL=$2
 
-if [ -z "${AUTHOR_EMAIL}" ] || [ -z "${AUTHOR_NAME}"]; then
+if [ -z "${AUTHOR_EMAIL}" ] || [ -z "${AUTHOR_NAME}" ]; then
   echo 'Missing some arguments'
   echo 'Usage: git-author author@example.com author'
   exit 1
