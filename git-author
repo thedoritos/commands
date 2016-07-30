@@ -1,0 +1,13 @@
+#!/bin/bash
+
+AUTHOR_NAME=$1
+AUTHOR_EMAIL=$2
+
+if [ -z "${AUTHOR_EMAIL}" ] || [ -z "${AUTHOR_NAME}"]; then
+  echo 'Missing some arguments'
+  echo 'Usage: git-author author@example.com author'
+  exit 1
+fi
+
+git config --local user.name "${AUTHOR_NAME}"
+git config --local user.email "${AUTHOR_EMAIL}"
