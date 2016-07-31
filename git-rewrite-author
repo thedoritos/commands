@@ -6,7 +6,7 @@ CORRECT_EMAIL=$3
 
 if [ -z "${OLD_EMAIL}" ] || [ -z "${CORRECT_NAME}" ] || [ -z "${CORRECT_EMAIL}" ]; then
   echo 'Missing some arguments'
-  echo 'Usage: git-rewrite-author old@example.com" author@example.com author'
+  echo 'Usage: git-rewrite-author old@example.com" author author@example.com'
   exit 1
 fi
 
